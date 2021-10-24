@@ -38,6 +38,7 @@
                     justify="center"
                   >
                     <v-col class="white--text text-center" cols="12" tag="h1">
+                      <br />
                       <span
                         :class="[
                           $vuetify.breakpoint.smAndDown
@@ -228,19 +229,19 @@ export default {
     return {
       projects: [
         {
-          src: "https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+          src: "https://wallpapercave.com/wp/wp2465949.png",
           title: "Flocking Algorithm ",
           text: "A recreation of the Boids flocking algorithm designed by Craig Reynolds. Project was built in JavaScript using the P5.js library and has being optimized through Quadtree implementation.",
           github: "https://github.com/CameronWhitworth/flockAI",
         },
         {
-          src: "https://images.unsplash.com/photo-1475938476802-32a7e851dad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+          src: "https://wallpapercave.com/wp/wp6878944.jpg",
           title: "Catalogue video games",
           text: "Tool designed for allowing users to track videos games own/played. Was built with Vue.js and the Vuetify material liberty. Connects to “RAWGs” game database API to fetch data. Users catalogue is saved to firebase.",
           github: "https://github.com/CameronWhitworth/flockAI",
         },
         {
-          src: "https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80",
+          src: "https://wallpapercave.com/wp/wp2465949.png",
           title: "Another Project",
           text: "Find something to add here",
           github: "https://github.com/CameronWhitworth/flockAI",
