@@ -28,6 +28,7 @@
           <v-row no-gutters>
             <v-img
               :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
+              max-height="100vh"
               src="./assets/hero_banner_3.jpg"
             >
               <v-theme-provider dark>
@@ -95,34 +96,64 @@
               class="mx-auto title font-weight-light mb-8"
               max-width="720"
             >
-              I’m a Junior developer looking to expand my existing skills 
-              in creating user driven applications. I graduated from university 
+              I’m a Junior developer looking to expand my existing skills in
+              creating user driven applications. I graduated from university
               with a First-Class Honours in computer science.
             </v-responsive>
 
             <v-avatar class="elevation-12 mb-12" size="128">
-              <v-img src="https://media-exp1.licdn.com/dms/image/C4E03AQEm9RbsmrNBRw/profile-displayphoto-shrink_200_200/0/1629892992315?e=1640822400&v=beta&t=RRGyzv2s_VQDQdBA20Q_dp9T3P0aMlCDOEsZex3aHAo"></v-img>
+              <v-img
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQEm9RbsmrNBRw/profile-displayphoto-shrink_200_200/0/1629892992315?e=1640822400&v=beta&t=RRGyzv2s_VQDQdBA20Q_dp9T3P0aMlCDOEsZex3aHAo"
+              ></v-img>
             </v-avatar>
 
             <div></div>
             <div>
-            <v-btn class="ma-2" target="_blank" color="grey" href="https://www.linkedin.com/in/cameron-whitworth-997k/" outlined large>
-              <span class="grey--text text--darken-1 font-weight-bold">
-                LINKEDIN
-              </span>
-            </v-btn>
-            <v-btn class="ma-2" target="_blank" color="grey" href="https://github.com/CameronWhitworth" outlined large>
-              <span class="grey--text text--darken-1 font-weight-bold">
-                GITHUB
-              </span>
-            </v-btn>
+              <v-btn
+                class="ma-2"
+                target="_blank"
+                color="grey"
+                href="https://www.linkedin.com/in/cameron-whitworth-997k/"
+                outlined
+                large
+              >
+                <span class="grey--text text--darken-1 font-weight-bold">
+                  LINKEDIN
+                </span>
+              </v-btn>
+              <v-btn
+                class="ma-2"
+                target="_blank"
+                color="grey"
+                href="https://github.com/CameronWhitworth"
+                outlined
+                large
+              >
+                <span class="grey--text text--darken-1 font-weight-bold">
+                  GITHUB
+                </span>
+              </v-btn>
+            </div>
+            <div>
+              <v-btn
+                class="ma-2"
+                target="_blank"
+                color="grey"
+                href="https://github.com/CameronWhitworth"
+                outlined
+                large
+              >
+                <span class="grey--text text--darken-1 font-weight-bold">
+                  RESUME
+                </span>
+              </v-btn>
             </div>
           </v-container>
 
           <div class="py-12"></div>
         </section>
 
-        <section id="projects" >
+        <section id="projects">
           <div class="py-12"></div>
 
           <v-container>
@@ -140,7 +171,7 @@
 
             <v-row>
               <v-col
-                v-for="({ src, text, title }, i) in projects"
+                v-for="({ src, text, title, github }, i) in projects"
                 :key="i"
                 cols="12"
                 md="4"
@@ -159,7 +190,12 @@
 
                 <div class="title font-weight-light mb-5" v-text="text"></div>
 
-                <v-btn class="ml-n4 font-weight-black" target="_blank" text href="github">
+                <v-btn
+                  class="ml-n4 font-weight-black"
+                  target="_blank"
+                  text
+                  :href="github"
+                >
                   GITHUB
                 </v-btn>
               </v-col>
@@ -210,6 +246,40 @@
 
           <div class="py-12"></div>
         </section>
+
+        <section id="stats">
+          <v-parallax
+            :height="$vuetify.breakpoint.smAndDown ? 1700 : 500"
+            src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+          >
+            <v-container class="text-center">
+              <h2 class="display-2 font-weight-bold mb-3">Technical Knowledge </h2>
+
+              <v-responsive class="mx-auto mb-12" width="56">
+                <v-divider class="mb-1"></v-divider>
+
+                <v-divider></v-divider>
+              </v-responsive>
+              <v-row class="mx-auto">
+                <v-col
+                  v-for="[value, title] of stats"
+                  :key="title"
+                  cols="12"
+                  md="2"
+                >
+                  <div class="text-center">
+                    <img :src="value" height="100" width="100" />
+
+                    <div
+                      class="title font-weight-regular text-uppercase"
+                      v-text="title"
+                    ></div>
+                  </div>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-parallax>
+        </section>
       </v-content>
 
       <v-footer class="justify-center" color="#292929" height="100">
@@ -238,10 +308,10 @@ export default {
           src: "https://wallpapercave.com/wp/wp6878944.jpg",
           title: "Catalogue video games",
           text: "Tool designed for allowing users to track videos games own/played. Was built with Vue.js and the Vuetify material liberty. Connects to “RAWGs” game database API to fetch data. Users catalogue is saved to firebase.",
-          github: "https://github.com/CameronWhitworth/flockAI",
+          github: "https://github.com/CameronWhitworth/game-tracker",
         },
         {
-          src: "https://wallpapercave.com/wp/wp2465949.png",
+          src: "https://miro.medium.com/max/2000/1*oiwBIOAfbC5oN8Ml67arTQ.png",
           title: "Another Project",
           text: "Find something to add here",
           github: "https://github.com/CameronWhitworth/flockAI",
@@ -263,6 +333,33 @@ export default {
           title: "User Driven",
           text: "Some text here",
         },
+      ],
+
+      stats: [
+        [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          "JavaScript",
+        ],
+        [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+          "Vue.js",
+        ],
+        [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          "Python",
+        ],
+        [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          "HTML",
+        ],
+        [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg",
+          "Linux",
+        ],
+        [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+          "Git",
+        ],
       ],
     };
   },
