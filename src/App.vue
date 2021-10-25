@@ -118,6 +118,12 @@
                 large
               >
                 <span class="grey--text text--darken-1 font-weight-bold">
+                  <v-icon
+                    dark
+                    left
+                  >
+                    mdi-linkedin
+                  </v-icon>
                   LINKEDIN
                 </span>
               </v-btn>
@@ -130,6 +136,13 @@
                 large
               >
                 <span class="grey--text text--darken-1 font-weight-bold">
+                  
+                  <v-icon
+                    dark
+                    left
+                  >
+                    mdi-github
+                  </v-icon>
                   GITHUB
                 </span>
               </v-btn>
@@ -144,6 +157,12 @@
                 large
               >
                 <span class="grey--text text--darken-1 font-weight-bold">
+                  <v-icon
+                    dark
+                    left
+                  >
+                    mdi-file-account
+                  </v-icon>
                   RESUME
                 </span>
               </v-btn>
@@ -152,7 +171,39 @@
 
           <div class="py-12"></div>
         </section>
+        <section id="skills">
+          <v-parallax
+            :height="$vuetify.breakpoint.smAndDown ? 1080 : 500"
+            src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+          >
+            <v-container class="text-center">
+              <h2 class="display-2 font-weight-bold mb-3">Technical Knowledge </h2>
 
+              <v-responsive class="mx-auto mb-12" width="56">
+                <v-divider class="mb-1"></v-divider>
+
+                <v-divider></v-divider>
+              </v-responsive>
+              <v-row class="mx-auto">
+                <v-col
+                  v-for="[value, title] of skills"
+                  :key="title"
+                  cols="12"
+                  md="2"
+                >
+                  <div class="text-center">
+                    <img :src="value" height="100" width="100" />
+
+                    <div
+                      class="title font-weight-regular text-uppercase"
+                      v-text="title"
+                    ></div>
+                  </div>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-parallax>
+        </section>
         <section id="projects">
           <div class="py-12"></div>
 
@@ -247,39 +298,8 @@
           <div class="py-12"></div>
         </section>
 
-        <section id="stats">
-          <v-parallax
-            :height="$vuetify.breakpoint.smAndDown ? 1700 : 500"
-            src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-          >
-            <v-container class="text-center">
-              <h2 class="display-2 font-weight-bold mb-3">Technical Knowledge </h2>
-
-              <v-responsive class="mx-auto mb-12" width="56">
-                <v-divider class="mb-1"></v-divider>
-
-                <v-divider></v-divider>
-              </v-responsive>
-              <v-row class="mx-auto">
-                <v-col
-                  v-for="[value, title] of stats"
-                  :key="title"
-                  cols="12"
-                  md="2"
-                >
-                  <div class="text-center">
-                    <img :src="value" height="100" width="100" />
-
-                    <div
-                      class="title font-weight-regular text-uppercase"
-                      v-text="title"
-                    ></div>
-                  </div>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-parallax>
-        </section>
+        
+        
       </v-content>
 
       <v-footer class="justify-center" color="#292929" height="100">
@@ -321,21 +341,21 @@ export default {
         {
           icon: "mdi-account-group-outline",
           title: "Team Player",
-          text: "Some text here",
+          text: "Extensive experience working within professional team environments.",
         },
         {
-          icon: "mdi-pencil",
+          icon: "mdi-school",
           title: "Excited To Learn",
-          text: "Some text here",
+          text: "Always looking to broaden my knowledge and learn new skills and tools.",
         },
         {
           icon: "mdi-widgets",
           title: "User Driven",
-          text: "Some text here",
+          text: "An understanding of designing applications for real users to work with.",
         },
       ],
 
-      stats: [
+      skills: [
         [
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
           "JavaScript",
@@ -353,7 +373,7 @@ export default {
           "HTML",
         ],
         [
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
           "Linux",
         ],
         [
