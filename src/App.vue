@@ -319,6 +319,13 @@ export default {
     return {
       projects: [
         {
+          // src: "https://miro.medium.com/max/2000/1*oiwBIOAfbC5oN8Ml67arTQ.png", c++ image
+          src: "https://www.koenvanzeijl.nl/blogs/blog-with-vue-nuxt/header.jpeg",
+          title: "Maximalist",
+          text: "Site designed to showcase maximalism design, artwork, decor and artists. Static site is made with Nuxt.js and connected to the contentful headless CMS.",
+          github: "https://github.com/CameronWhitworth/maximalist",
+        },
+        {
           src: "https://wallpapercave.com/wp/wp2465949.png",
           title: "Flocking Algorithm ",
           text: "A recreation of the Boids flocking algorithm designed by Craig Reynolds. Project was built in JavaScript using the P5.js library and has being optimized through Quadtree implementation.",
@@ -329,12 +336,6 @@ export default {
           title: "Catalogue video games",
           text: "Tool designed for allowing users to track videos games own/played. Was built with Vue.js and the Vuetify material liberty. Connects to “RAWGs” game database API to fetch data. Users catalogue is saved to firebase.",
           github: "https://github.com/CameronWhitworth/game-tracker",
-        },
-        {
-          src: "https://miro.medium.com/max/2000/1*oiwBIOAfbC5oN8Ml67arTQ.png",
-          title: "Another Project",
-          text: "Find something to add here",
-          github: "https://github.com/CameronWhitworth/flockAI",
         },
       ],
       features: [
