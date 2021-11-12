@@ -98,7 +98,7 @@
             >
               I’m a Junior developer looking to expand my existing skills in
               creating user driven applications. I graduated from university
-              with a First-Class Honours in computer science.
+              with a <b> First-Class Honours </b> in computer science.
             </v-responsive>
 
             <v-avatar class="elevation-12 mb-12" size="128">
@@ -285,7 +285,7 @@
         </section>
       </v-content>
 
-      <v-footer class="justify-center" color="#292929" height="100">
+      <v-footer class="justify-center" color="#292929" height="140">
         <div
           class="title font-weight-light grey--text text--lighten-1 text-center"
         >
@@ -347,7 +347,7 @@ export default {
         {
           src: "https://wallpapercave.com/wp/wp2465949.png",
           title: "Flocking Algorithm ",
-          text: "A recreation of the Boids flocking algorithm designed by Craig Reynolds. Project was built in JavaScript using the P5.js library and has being optimized through Quadtree implementation.",
+          text: "A recreation of the Boids flocking algorithm designed by Craig Reynolds. Project was built in JavaScript using the P5.js library and has being optimized through a Quadtree implementation.",
           github: "https://github.com/CameronWhitworth/flockAI",
         },
         {
@@ -361,12 +361,12 @@ export default {
         {
           icon: "mdi-account-group-outline",
           title: "Team Player",
-          text: "Extensive experience working within professional team environments.",
+          text: "Extensive experience working with and within professional team environments.",
         },
         {
           icon: "mdi-school",
           title: "Excited To Learn",
-          text: "Always looking to broaden my knowledge and learn new skills and tools.",
+          text: "Always looking to broaden my knowledge and learn new skills and industry tools.",
         },
         {
           icon: "mdi-widgets",
