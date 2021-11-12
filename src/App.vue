@@ -118,12 +118,7 @@
                 large
               >
                 <span class="grey--text text--darken-1 font-weight-bold">
-                  <v-icon
-                    dark
-                    left
-                  >
-                    mdi-linkedin
-                  </v-icon>
+                  <v-icon dark left> mdi-linkedin </v-icon>
                   LINKEDIN
                 </span>
               </v-btn>
@@ -136,13 +131,7 @@
                 large
               >
                 <span class="grey--text text--darken-1 font-weight-bold">
-                  
-                  <v-icon
-                    dark
-                    left
-                  >
-                    mdi-github
-                  </v-icon>
+                  <v-icon dark left> mdi-github </v-icon>
                   GITHUB
                 </span>
               </v-btn>
@@ -157,12 +146,7 @@
                 large
               >
                 <span class="grey--text text--darken-1 font-weight-bold">
-                  <v-icon
-                    dark
-                    left
-                  >
-                    mdi-file-account
-                  </v-icon>
+                  <v-icon dark left> mdi-file-account </v-icon>
                   RESUME
                 </span>
               </v-btn>
@@ -177,7 +161,9 @@
             src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
           >
             <v-container class="text-center">
-              <h2 class="display-2 font-weight-bold mb-3">Technical Knowledge </h2>
+              <h2 class="display-2 font-weight-bold mb-3">
+                Technical Knowledge
+              </h2>
 
               <v-responsive class="mx-auto mb-12" width="56">
                 <v-divider class="mb-1"></v-divider>
@@ -297,9 +283,6 @@
 
           <div class="py-12"></div>
         </section>
-
-        
-        
       </v-content>
 
       <v-footer class="justify-center" color="#292929" height="100">
@@ -307,6 +290,42 @@
           class="title font-weight-light grey--text text--lighten-1 text-center"
         >
           &copy; {{ new Date().getFullYear() }} — Cameron Whitworth
+
+          <br />
+
+          <v-btn
+            class="ma-1"
+            target="_blank"
+            color="transparent"
+            plain
+            href="https://www.linkedin.com/in/cameron-whitworth-997k/"
+          >
+            <span class="grey--text text--darken-1 font-weight-bold">
+              <v-icon dark> mdi-linkedin </v-icon>
+            </span>
+          </v-btn>
+          <v-btn
+            class="ma-1"
+            target="_blank"
+            color="transparent"
+            plain
+            href="https://github.com/CameronWhitworth"
+          >
+            <span class="grey--text text--darken-1 font-weight-bold">
+              <v-icon dark> mdi-github </v-icon>
+            </span>
+          </v-btn>
+          <v-btn
+            class="ma-1"
+            target="_blank"
+            color="transparent"
+            plain
+            href="https://github.com/CameronWhitworth"
+          >
+            <span class="grey--text text--darken-1 font-weight-bold">
+              <v-icon dark> mdi-file-account </v-icon>
+            </span>
+          </v-btn>
         </div>
       </v-footer>
     </v-app>
