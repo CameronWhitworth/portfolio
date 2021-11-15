@@ -156,7 +156,7 @@
                   md="2"
                 >
                   <div class="text-center">
-                    <img :src="value" height="100" width="100" />
+                    <img :src="value" :height="$vuetify.breakpoint.smAndDown ? 85 : 100" />
 
                     <div
                       class="title font-weight-regular text-uppercase"
