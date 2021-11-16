@@ -94,6 +94,7 @@
                 href="https://www.linkedin.com/in/cameron-whitworth-997k/"
                 outlined
                 large
+                width="140"
               >
                 <span class="grey--text text--darken-1 font-weight-bold">
                   <v-icon dark left> mdi-linkedin </v-icon>
@@ -107,6 +108,7 @@
                 href="https://github.com/CameronWhitworth"
                 outlined
                 large
+                width="140"
               >
                 <span class="grey--text text--darken-1 font-weight-bold">
                   <v-icon dark left> mdi-github </v-icon>
@@ -122,6 +124,7 @@
                 href="https://github.com/CameronWhitworth"
                 outlined
                 large
+                width="140"
               >
                 <span class="grey--text text--darken-1 font-weight-bold">
                   <v-icon dark left> mdi-file-account </v-icon>
