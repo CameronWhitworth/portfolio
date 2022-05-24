@@ -81,7 +81,7 @@
 
             <v-avatar class="elevation-12 mb-12" size="128">
               <v-img
-                src="https://media-exp1.licdn.com/dms/image/C4E03AQEm9RbsmrNBRw/profile-displayphoto-shrink_200_200/0/1629892992315?e=1640822400&v=beta&t=RRGyzv2s_VQDQdBA20Q_dp9T3P0aMlCDOEsZex3aHAo"
+                src="./assets/pfp_port.jpeg"
               ></v-img>
             </v-avatar>
 
