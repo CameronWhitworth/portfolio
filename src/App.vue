@@ -121,7 +121,7 @@
                 class="ma-2"
                 target="_blank"
                 color="grey"
-                href="https://github.com/CameronWhitworth"
+                href="https://github.com/CameronWhitworth/portfolio/blob/main/Resume.pdf"
                 outlined
                 large
                 width="140"
