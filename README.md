@@ -1,5 +1,8 @@
 # portfolio
 
+## Live Project
+https://cam-whitworth.netlify.app/
+
 ## Project setup
 ```
 npm install
